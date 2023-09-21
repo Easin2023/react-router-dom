@@ -27,7 +27,21 @@ import Details from "../Page/ProductsPage/ProductsDetails/Details";
                },
                {
                     path:'/dashboard',
-                    element: <Dashboard></Dashboard>
+                    element: <Dashboard></Dashboard>,
+                    children: [
+                         {
+                              path: '/dashboard',
+                              element: <div>Hallo world</div>
+                         },
+                         {
+                              path: '/dashboard/Profile',
+                              element: <div>Profile</div>
+                         },
+                         {
+                              path: '/dashboard/editProfile',
+                              element: <div>editProfile</div>
+                         }
+                    ]
                }
           ]
      }
